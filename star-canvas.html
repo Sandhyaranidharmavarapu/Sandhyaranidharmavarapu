@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       
+        h1{
+            color: blue;
+        }
+        body{
+            text-align: center;
+        }
+        
+     </style>
+ </head>
+ <body>
+     <h1>Greeting Card</h1>
+     <hr>
+     <canvas width="300" height="300"></canvas>
+     <script>
+         var can = document.getElementsByTagName("canvas")[0];
+         var ctx = can.getContext("2d");
+     
+         ctx.lineTo(75,75);
+         ctx.lineTo(150,225);
+         ctx.lineTo(225,75);
+         ctx.lineTo(40,170);
+         ctx.lineTo(260,170);
+         ctx.lineTo(75,75);
+         ctx.stroke();
+ 
+     </script>
+     <br>
+     <br>
+ <label for="Date of Birth">
+     Enter the date:
+     <input type="date" name="date">
+ </label>
+</body>
+</html>
